@@ -1,0 +1,128 @@
+.Homepage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 110px 60px 0;
+}
+
+.Homepage h1 {
+    color: white;
+    display: flex;
+    font-size: 32px;
+    letter-spacing: 0.5rem;
+    line-height: 100px;
+    font-weight: 800;
+}
+
+.Homepage h2 {
+    color: white;
+    display: flex;
+    font-size: 24px;
+    letter-spacing: 0.2rem;
+    line-height: 60px;
+}
+
+.Homepage p {
+    color: white;
+    display: flex;
+    text-align: left;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+@media (max-width: 1024px) {
+    .Homepage {
+        padding: 80px 40px 0;
+    }
+
+    .Homepage h1 {
+        font-size: 28px;
+        line-height: 80px;
+    }
+
+    .Homepage h2 {
+        font-size: 22px;
+        line-height: 50px;
+    }
+
+    .Homepage p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Homepage {
+        padding: 60px 30px 0;
+        align-items: center;
+    }
+
+    .Homepage h1 {
+        font-size: 24px;
+        line-height: 70px;
+        text-align: center;
+    }
+
+    .Homepage h2 {
+        font-size: 20px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .Homepage p {
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .Homepage {
+        padding: 40px 20px 0;
+        align-items: center;
+    }
+
+    .Homepage h1 {
+        font-size: 20px;
+        line-height: 60px;
+        text-align: center;
+    }
+
+    .Homepage h2 {
+        font-size: 18px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .Homepage p {
+        font-size: 12px;
+        line-height: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .Homepage {
+        padding: 40px 20px 0;
+        align-items: center;
+    }
+
+    .Homepage h1 {
+        font-size: 20px;
+        line-height: 60px;
+        text-align: center;
+    }
+
+    .Homepage h2 {
+        font-size: 18px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .Homepage p {
+        font-size: 12px;
+        line-height: 20px;
+        text-align: center;
+    }
+}
