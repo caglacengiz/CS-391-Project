@@ -1,0 +1,151 @@
+.timeline-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.event {
+    position: relative;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.event-dot {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    position: absolute;
+    transition: box-shadow 0.3s ease;
+}
+
+.event-dot::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #000000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.3s ease;
+}
+
+.event:hover .event-dot::after {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.event-content {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    height: 90px;
+    width: 700px;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.right-content {
+    left: 30px;
+}
+
+.left-content {
+    right: 30px;
+}
+
+.event:hover .event-content {
+    display: block;
+}
+
+.event-content p {
+    margin: 0;
+    color: #000000;
+    font-size: 24px;
+}
+
+.image {
+    position: absolute;
+    left: -650px;
+    top: 80%;
+    height: 200px;
+    width: 200px;
+}
+
+@media (max-width: 1024px) {
+    .timeline-container {
+        padding: 10px;
+    }
+
+    .image {
+        left: -450px;
+        top: 70%;
+        height: 150px;
+        width: 150px;
+    }
+
+    .event {
+        height: 100px;
+    }
+
+    .event-content {
+        height: 80px;
+        font-size: 16px;
+        width: 350px;
+    }
+
+    .event-content p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .image {
+        left: -300px;
+        top: 70%;
+        height: 100px;
+        width: 100px;
+    }
+
+    .event {
+        height: 80px;
+    }
+
+    .event-content {
+        height: 70px;
+        font-size: 14px;
+        width: 280px;
+    }
+
+    .event-content p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .image {
+        left: 200%;
+        top: 70%;
+        height: 80px;
+        width: 80px;
+    }
+
+    .event {
+        height: 60px;
+    }
+
+    .event-content {
+        height: 60px;
+        font-size: 12px;
+        width: 200px;
+    }
+
+    .event-content p {
+        font-size: 12px;
+    }
+}
