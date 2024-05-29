@@ -6,7 +6,7 @@ Our project is a comprehensive personal website for a friend of ours designed to
 
 ### Usage Scenarios
 
-![Home Page](public/homepage.jpg)
+![Home Page](public/homepage.png)
 
 **Scenario 1:** Checking the projects
 
