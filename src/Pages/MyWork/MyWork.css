@@ -1,0 +1,135 @@
+.work-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    padding-top: 80px;
+    padding-left: 180px;
+    padding-right: 180px;
+    padding-bottom: 100px;
+    margin-bottom: 120px;
+}
+
+.work-description, .work-image {
+    flex-basis: 48%;
+    max-width: 48%;
+    padding: 20px;
+}
+
+.work-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.reverse-layout .work-description {
+    order: 2;
+}
+
+.reverse-layout .work-image {
+    order: 1;
+}
+
+.project-title {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 28px;
+    font-size: 32px;
+    color: white;
+}
+
+.project-title:after {
+    content: '';
+    position: absolute;
+    bottom: -16px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+
+.project-brief {
+    color: white;
+}
+
+@media (max-width: 1024px) {
+    .work-item {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .work-description, .work-image {
+        flex-basis: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .reverse-layout .work-description,
+    .reverse-layout .work-image {
+        order: initial;
+    }
+
+    .project-title {
+        font-size: 28px;
+    }
+
+    .project-title:after {
+        bottom: -12px;
+    }
+
+    .project-brief {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .work-item {
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 60px;
+        margin-bottom: 60px;
+    }
+
+    .work-description, .work-image {
+        padding: 10px;
+    }
+
+    .project-title {
+        font-size: 24px;
+    }
+
+    .project-title:after {
+        bottom: -10px;
+    }
+
+    .project-brief {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .work-item {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .work-description, .work-image {
+        padding: 5px;
+    }
+
+    .project-title {
+        font-size: 20px;
+    }
+
+    .project-title:after {
+        bottom: -8px;
+    }
+
+    .project-brief {
+        font-size: 12px;
+    }
+}
